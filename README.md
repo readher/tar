@@ -70,7 +70,9 @@
   [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
 2. Dokumentacja [RSpec](http://rspec.info/):
   - [rspec-core](https://github.com/rspec/rspec-core)
-  - [rspec-expectations](https://github.com/rspec/rspec-expectations)
+  - [rspec-expectations](https://github.com/rspec/rspec-expectations); zob. też
+    [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers) –
+    `#output` matcher captures _stdout_ and _stderr_
   - [rspec-mocks](https://github.com/rspec/rspec-mocks)
 3. [Better Specs](http://betterspecs.org) –
   how to describe your methods, use context
