@@ -172,7 +172,8 @@ Continuous Integration and Deployment:
 Fajne:
 
 1. [Codility](https://codility.com/) – we test coders
-
+1. [Mega Project List](https://github.com/karan/Projects) –
+  a list of practical projects that anyone can solve in any programming language
 
 
 
