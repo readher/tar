@@ -19,6 +19,7 @@
       [language-rspec](https://atom.io/packages/language-rspec)
   - Przykłady pokazujące jak to działa:
     [factorial.rb](wyklady/1-Classes_Modules/factorial.rb),
+    [keyword_arguments.rb](wyklady/1-Classes_Modules/keyword_arguments.rb),
     [fox.rb](wyklady/1-Classes_Modules/fox.rb),
     [hello_world](wyklady/2-Hello_Bundler/hello_world]),
     [hello_bundler](wyklady/2-Hello_Bundler/hello_bundler).
