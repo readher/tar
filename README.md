@@ -1,12 +1,4 @@
-## Testowanie aplikacji Ruby, 2016/17
-
-> There are only two types of theories [programms]:<br>
-> 1. Theories that are known to be wrong, as they were tested
-> and adequately rejected.<br>
-> 2. Theories that have not yet been known to be wrong,
-> not falsified yet, but are exposed to be wrong.<br>
-> – *K. Popper*<br>
-> Why is the theory [program] **never right**?
+## Testowanie Aplikacji Ruby, 2017/18
 
 ### Ruby
 
