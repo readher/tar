@@ -27,8 +27,8 @@
   - [Try Ruby](http://tryruby.org)
   - [Code Quizzes – Learn Ruby](http://www.codequizzes.com/ruby)
   - [Learn X in Y minutes][5], where X = Ruby
-  - [Exercism – Ruby](http://exercism.io/languages/ruby/about)
-  - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.3.1/)
+  - [Exercism – Ruby](http://exercism.io/languages/ruby/about); po instalacji wykonaj `exercism list ruby`
+  - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.4.2/)
   - [How to Solve Coding Anti-Patterns for Ruby Rookies](http://www.sitepoint.com/how-to-solve-coding-anti-patterns-for-ruby-rookies/)
 1. Refaktoryzacja albo przepisywanie kodu:
   - William C. Wake, Kevin Rutherford.
