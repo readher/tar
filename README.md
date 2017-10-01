@@ -58,8 +58,8 @@
 
 ### RSpec
 
-1. David Chelimsky, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, Dan North.
-  [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends][3].
+1. Myron Marston and Ian Dees.
+  [Effective Testing with RSpec 3][3].
 1. Robert C. Martin.
   [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
 2. Dokumentacja [RSpec](http://rspec.info/):
@@ -173,7 +173,7 @@ Fajne:
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 [2]: http://rvm.io/rvm
-[3]: http://pragprog.com/book/achbd/the-rspec-book
+[3]: https://pragprog.com/book/rspec3/effective-testing-with-rspec-3
 [4]: http://www.tutorialspoint.com/ruby/
 [5]: http://learnxinyminutes.com/docs/ruby/
 [6]: http://tryruby.org/levels/1/challenges/0
