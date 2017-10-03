@@ -1,12 +1,4 @@
-## Testowanie aplikacji Ruby, 2016/17
-
-> There are only two types of theories [programms]:<br>
-> 1. Theories that are known to be wrong, as they were tested
-> and adequately rejected.<br>
-> 2. Theories that have not yet been known to be wrong,
-> not falsified yet, but are exposed to be wrong.<br>
-> – *K. Popper*<br>
-> Why is the theory [program] **never right**?
+## Testowanie Aplikacji Ruby, 2017/18
 
 ### Ruby
 
@@ -15,26 +7,37 @@
   - [Bundler](http://bundler.io) – provides a consistent environment
     for Ruby projects by tracking and installing the exact gems and
     versions that are needed.
-    - instalacja gemów – [Miejsce na dysku Sigma + Laboratoria](https://inf.ug.edu.pl/aktualizacje-serwera-sigma)  
+    - instalacja gemów – [Miejsce na dysku Sigma + Laboratoria](https://inf.ug.edu.pl/aktualizacje-serwera-sigma)
   - Podstawowe gemy: rspec, [rubocop](http://rubocop.readthedocs.io/en/latest/).
   - [Instalacja edytora Atom](https://atom.io) i rozszerzeń (pakietów):
     * [linter](https://github.com/steelbrain/linter) i
       [linter-rubocop](https://atom.io/packages/linter-rubocop);
       [konfiguracja](http://rubocop.readthedocs.io/en/latest/),
       [enabled style cops](https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml)
-    * [script](https://atom.io/packages/script)
+    * [script](https://atom.io/packages/script), ruby-test-switcher
     * [rspec](https://atom.io/packages/rspec) i
       [language-rspec](https://atom.io/packages/language-rspec)
   - Przykłady pokazujące jak to działa:
     [factorial.rb](wyklady/1-Classes_Modules/factorial.rb),
+    [keyword_arguments.rb](wyklady/1-Classes_Modules/keyword_arguments.rb),
     [fox.rb](wyklady/1-Classes_Modules/fox.rb),
     [hello_world](wyklady/2-Hello_Bundler/hello_world]),
     [hello_bundler](wyklady/2-Hello_Bundler/hello_bundler).
 1. Wprowadzenie do języka Ruby:
-   - [Try Ruby](http://tryruby.org)
-   - [Learn X in Y minutes][5], where X = Ruby
-   - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.3.1/)
-   - [How to Solve Coding Anti-Patterns for Ruby Rookies](http://www.sitepoint.com/how-to-solve-coding-anti-patterns-for-ruby-rookies/)
+  - [Try Ruby](http://tryruby.org)
+  - [Code Quizzes – Learn Ruby](http://www.codequizzes.com/ruby)
+  - [Learn X in Y minutes][5], where X = Ruby
+  - [Exercism – Ruby](http://exercism.io/languages/ruby/about); po instalacji wykonaj `exercism list ruby`
+  - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.4.2/)
+  - [How to Solve Coding Anti-Patterns for Ruby Rookies](http://www.sitepoint.com/how-to-solve-coding-anti-patterns-for-ruby-rookies/)
+1. Refaktoryzacja albo przepisywanie kodu:
+  - William C. Wake, Kevin Rutherford.
+   [Refactoring in Ruby](http://www.refactoringinruby.info);
+   [repo with source code](https://github.com/kevinrutherford/rrwb-code);
+   [Ruby refactoring cheatsheet](http://ghendry.net/refactor.html).
+  - [reek](https://github.com/troessner/reek) – code smell detector for Ruby.
+  - [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) –
+   warte przeczytania, chociaż dotyczy języka JavaScript.
 
 ---
 
@@ -42,8 +45,11 @@
 2. Ogólnie o testowaniu:<br>
    - Learn X in Y minutes, where X = Rspec, Capybara, Factory Girl.
 3. Wprowadzenie do RSpec.
-4. Testy jednostkowe.
-5. Testy integracyjne.
+4. Testy jednostkowe:
+   - [Ruby](https://github.com/ruby/ruby/tree/trunk/test/ruby) – przykłady w _TestUnit_
+5. [Mostly Static Pages](https://github.com/rails4/mostly_static_pages5) –
+   testowanie kontrolerów i widoków:
+   - [rspec-rails](https://github.com/rspec/rspec-rails).
 6. Refaktoryzacja kodu.
 7. Pokrycie kodu testami:
    - [simplecov][8].
@@ -53,13 +59,15 @@
 
 ### RSpec
 
-1. David Chelimsky, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, Dan North.
-  [The RSpec Book: Behaviour-Driven Development with RSpec, Cucumber, and Friends][3].
+1. Myron Marston and Ian Dees.
+  [Effective Testing with RSpec 3][3].
 1. Robert C. Martin.
   [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
 2. Dokumentacja [RSpec](http://rspec.info/):
   - [rspec-core](https://github.com/rspec/rspec-core)
-  - [rspec-expectations](https://github.com/rspec/rspec-expectations)
+  - [rspec-expectations](https://github.com/rspec/rspec-expectations); zob. też
+    [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers) –
+    the `#output` matcher captures _stdout_ and _stderr_
   - [rspec-mocks](https://github.com/rspec/rspec-mocks)
 3. [Better Specs](http://betterspecs.org) –
   how to describe your methods, use context
@@ -81,6 +89,8 @@ Ruby:
 
 Git:
 
+* Jeff Geerling.
+  [Why I close PRs (project maintainer notes)](http://www.jeffgeerling.com/blog/2016/why-i-close-prs-oss-project-maintainer-notes) – please make sure basic things like spacing, variable naming conventions, line endings, spaces instead of tabs, and the like follow the general style of the project
 * Scott Chacon, Ben Straub. [Pro Git](https://git-scm.com/book/en/v2)
   - [6.1 GitHub – Account Setup and Configuration](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
   - [6.2 GitHub - Contributing to a Project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
@@ -88,7 +98,7 @@ Git:
 * [github-cheat-sheet](http://git.io/sheet)
 
 
-Edytor Atom:
+Atom (command palette -> cmd+shift+p):
 
 Polskie literki (ą, Ś) oraz nowe i nadpisanie _keybinding_ w systemie Darwin.
 Dopisujemy w pliku _~/.atom/keymap.cson_:
@@ -150,18 +160,21 @@ Continuous Integration and Deployment:
 
 1. [Codeship](https://www.codeship.io/).
 1. [Travis](https://travis-ci.org/) – niestety usługa płatna dla repozytoriów prywatnych.
+1. [Code Climate](https://codeclimate.com/) – healthy code ships faster.
+  - [Deciphering Ruby Code Metrics](http://blog.codeclimate.com/blog/2013/08/07/deciphering-ruby-code-metrics/)
 
 
 Fajne:
 
 1. [Codility](https://codility.com/) – we test coders
-
+1. [Mega Project List](https://github.com/karan/Projects) –
+  a list of practical projects that anyone can solve in any programming language
 
 
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
 [2]: http://rvm.io/rvm
-[3]: http://pragprog.com/book/achbd/the-rspec-book
+[3]: https://pragprog.com/book/rspec3/effective-testing-with-rspec-3
 [4]: http://www.tutorialspoint.com/ruby/
 [5]: http://learnxinyminutes.com/docs/ruby/
 [6]: http://tryruby.org/levels/1/challenges/0

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Movie
   REGULAR = 0
   NEW_RELEASE = 1
@@ -9,7 +7,8 @@ class Movie
   attr_accessor :price_code
 
   def initialize(title, price_code)
-    @title, @price_code = title, price_code
+    @title = title
+    @price_code = price_code
   end
 end
 
@@ -17,7 +16,8 @@ class Rental
   attr_reader :movie, :days_rented
 
   def initialize(movie, days_rented)
-    @movie, @days_rented = movie, days_rented
+    @movie = movie
+    @days_rented = days_rented
   end
 
   def charge
@@ -36,7 +36,7 @@ class Rental
   end
 
   def frequent_renter_points
-    (movie.price_code == Movie::NEW_RELEASE && days_rented > 1) ? 2 : 1
+    movie.price_code == Movie::NEW_RELEASE && days_rented > 1 ? 2 : 1
   end
 end
 
@@ -79,25 +79,24 @@ class Customer
   private
 
   def total_charge
-    @rentals.inject(0) { |sum, rental| sum += rental.charge }
+    @rentals.inject(0) { |acc, elem| acc += elem.charge }
   end
 
   def total_frequent_renter_points
-    @rentals.inject(0) { |sum, rental| sum += rental.frequent_renter_points }
+    @rentals.inject(0) { |acc, elem| acc += elem.frequent_renter_points }
   end
-
 end
 
 # przykład użycia
 
-movie1 = Movie.new("Milion sposobów, jak zginąć na Zachodzie", Movie::NEW_RELEASE)
-movie2 = Movie.new("Uśpieni", Movie::CHILDRENS)
+movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
+movie2 = Movie.new('Uśpieni', Movie::CHILDRENS)
 
-customer = Customer.new "Włodek"
+customer = Customer.new 'Włodek'
 
 customer.add_rental Rental.new(movie1, 4)
 customer.add_rental Rental.new(movie2, 6)
 
 puts customer.statement
-puts "-"*44
+puts '-' * 44
 puts customer.html_statement

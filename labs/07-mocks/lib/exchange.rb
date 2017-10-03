@@ -1,5 +1,6 @@
 require 'csv'
 
+# TODO
 class Exchange
   attr_reader :currency
 
@@ -9,15 +10,17 @@ class Exchange
   end
 
   def call
-    Money.new((@money*find_exchange_rate).value, currency)
+    Money.new((@money * find_exchange_rate).value, currency)
   end
 
   private
+
   def find_exchange_rate
-    read_file.find{|x| x['currency'] == currency}['exchange_rate'].to_f
+    read_file.find { |x| x['currency'] == currency }['exchange_rate'].to_f
   end
 
   def read_file
-    CSV.open(File.expand_path('../../exchange_rate.csv', __FILE__), headers: true)
+    CSV.open(File.expand_path('../../exchange_rate.csv', __FILE__),
+             headers: true)
   end
 end

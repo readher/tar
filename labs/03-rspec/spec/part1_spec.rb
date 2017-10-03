@@ -1,4 +1,8 @@
 # keyboard shortcuts: https://atom.io/packages/rspec
+#
+#   Ctrl+Alt+T - executes all specs the current file
+#   Ctrl+Alt+X - executes only the spec on the line the cursor's at
+#   Ctrl+Alt+E - re-executes the last executed spec
 
 require 'simplecov'
 SimpleCov.start

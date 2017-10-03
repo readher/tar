@@ -1,5 +1,5 @@
 require 'library'
-require 'book'
+# require 'book'
 
 RSpec.describe Library do
   before(:example) do

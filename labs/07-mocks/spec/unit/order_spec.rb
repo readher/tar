@@ -1,48 +1,60 @@
-require_relative '../../lib/order'
-require_relative '../../lib/extend_enumerable'
+require 'order'
+
+# https://relishapp.com/rspec/rspec-mocks/v/3-5/docs/verifying-doubles
 
 describe Order do
-  let(:full_name) { 'FOO' }
-  let(:date) { Date.new.to_s }
+  subject { Order.new(full_name, date, list) }
+
+  let(:full_name) { 'Biedronka' }
+  let(:date) { '2016-12-02' }
+
+  let(:product) { instance_double('Product', price: double) }
+
+  # see also rspec-collection_matchers
 
   context '#products' do
-    subject { Order.new(full_name, date, products).products }
+    # lazy evaluation of list
     context 'without products' do
-      let(:products) { [] }
+      let(:list) { [] }
+
       it 'returns empty array' do
-        expect(subject).to eq []
+        expect(subject.products).to eq []
       end
     end
 
     context 'with products' do
-      let(:product1) { double }
-      let(:product2) { double }
-      let(:products) { [product1, product2] }
-      it 'returns array of objects' do
-        expect(subject).to eq products
+      let(:list) { [instance_double('Product'), instance_double('Product')] }
+
+      it 'returns array of Products' do
+        expect(subject.products).to be_kind_of(Array)
       end
     end
   end
 
-  context '#total_amount' do
-    subject { Order.new(full_name, date, products).total_amount }
+  context '#monies' do
+    context 'order without products' do
+      let(:list) { [] }
 
-    context 'without products' do
-      let(:products) { [] }
-      it 'returns 0' do
-        expect(subject).to eq 0
+      it 'returns empty array' do
+        expect(subject.monies).to eq []
       end
     end
+    context 'order with products' do
+      let(:list) { [product, product] }
 
-    context 'with products' do
-      let(:money2) { instance_double('Money', value: 10, currency: 'EUR') }
-      let(:money) { instance_double('Money', value: 10, currency: 'EUR', :+ => money2) }
-      let(:product1) { instance_double('Product', price: money) }
-      let(:product2) { instance_double('Product', price: money) }
-      let(:products) { [product1, product2] }
-
-      xit 'returns sum of product prices' do
+      it 'returns array of Monies' do
+        # https://github.com/rspec/rspec-collection_matchers
+        # -> add rspec-collection_matchers to spec_helper.rb
+        expect(subject.monies).to have_exactly(2).items
+        expect(subject.monies).to be_kind_of(Array)
       end
     end
   end
+
+  # def self.sum(arr)
+  #   Money.sum arr.products.map(&:price)
+  # end
+  # context '.sum' do
+  #   pending 'should be tested in integration'
+  # end
 end

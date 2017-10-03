@@ -1,4 +1,4 @@
-require_relative '../lib/report'
+require 'rspec/collection_matchers'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -9,4 +9,3 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
-

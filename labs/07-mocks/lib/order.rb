@@ -1,4 +1,4 @@
-require_relative 'product'
+require 'extend_enumerable'
 
 class Order
   attr_accessor :full_name, :date, :products
@@ -9,8 +9,14 @@ class Order
     @products = products
   end
 
-  def total_amount
-    return 0 if products.empty?
-    Money.sum(products.map(&:price))
+  def add(product)
+    products.push product
+  end
+
+  # def self.sum(arr)
+  #   Money.sum arr.products.map(&:price)
+  # end
+  def monies
+    products.map(&:price)
   end
 end

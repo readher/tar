@@ -26,7 +26,7 @@ Przykładowy plik *.travis.yml*:
 ```yaml
 language: ruby
 rvm:
-- 2.2.2
+- 2.3.1
 env:
 - DB=postgresql
 cache: bundler
