@@ -12,7 +12,10 @@ require 'csv'
 require 'pp'
 
 Prawn::Document.generate('lista.pdf') do
+  # puts "Prawn:DATADIR: #{Prawn::DATADIR}""
+  # font '#{Prawn::DATADIR}/fonts/Times-Roman.afm'
   # font '/usr/share/fonts/dejavu/DejaVuSans.ttf'
+
   font '/Users/wbzyl/.fonts/Roboto/Roboto-Regular.ttf'
   font_size 11
 
@@ -56,6 +59,3 @@ Prawn::Document.generate('lista.pdf') do
 end
 
 puts '--> lista.pdf'
-
-puts 'Prawn:DATADIR: #{Prawn::DATADIR}'
-# font '#{Prawn::DATADIR}/fonts/Times-Roman.afm'
