@@ -34,7 +34,7 @@ Prawn::Document.generate('lista.pdf') do
 
   nazwisko = make_cell content: 'nazwisko'
   imie = make_cell content: 'imię'
-  repo_url = make_cell content: 'github login'
+  repo_url = make_cell content: 'github username'
 
   index = 0
   counted = body.map do |row|
