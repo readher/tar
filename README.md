@@ -77,8 +77,8 @@
 
 ### Więcej o RSpec
 
-. Bill Wake, http://xp123.com/articles/3a-arrange-act-assert/[3A – Arrange, Act, Assert]
-. Mary-Anne Cosgrove, https://webuild.envato.com/blog/making-the-most-of-bdd-part-1/[Making the Most of BDD, Part 1]
+1. Bill Wake, [3A – Arrange, Act, Assert](http://xp123.com/articles/3a-arrange-act-assert/).
+1. Mary-Anne Cosgrove, [Making the Most of BDD, Part 1](https://webuild.envato.com/blog/making-the-most-of-bdd-part-1/).
 
 
 ### Dokumentacja i inne użyteczne rzeczy
