@@ -75,9 +75,22 @@
   many examples of excellent descriptions
   - [The RSpec Style Guide](https://github.com/reachlocal/rspec-style-guide)
 
+
 ### Więcej o RSpec
 
 1. Bill Wake, [3A – Arrange, Act, Assert](http://xp123.com/articles/3a-arrange-act-assert/).
+1. [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/v/3-6/docs/basics/scope).
+
+Terminologia za Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Addison Wesley (2007).
+
+* [Mocks, Fakes, Stubs and Dummies](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html)
+* [Test Double Patterns](http://xunitpatterns.com/Test%20Double%20Patterns.html)
+  - [Test Double](http://xunitpatterns.com/Test%20Double.html) also known as *Imposter*
+  - [Test Spy](http://xunitpatterns.com/Test%20Spy.html)
+  - [Mock Object](http://xunitpatterns.com/Mock%20Object.html)
+  - [Fake Object](http://xunitpatterns.com/Fake%20Object.html)
+  - [Configurable Test Double](http://xunitpatterns.com/Configurable%20Test%20Double.html)
+  - [Hard-Coded Test Double](http://xunitpatterns.com/Hard-Coded%20Test%20Double.html)
 
 <!--
 1. Mary-Anne Cosgrove, [Making the Most of BDD, Part 1](https://webuild.envato.com/blog/making-the-most-of-bdd-part-1/).
