@@ -99,7 +99,7 @@ Terminologia za Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Ad
 -->
 
 
-### Dokumentacja i inne użyteczne rzeczy
+### Inne użyteczne rzeczy...
 
 Ruby:
 
