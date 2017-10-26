@@ -101,13 +101,17 @@ Terminologia za Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Ad
 
 ### Inne użyteczne rzeczy...
 
+GitHub:
+
+* [How GitHub Writes Blog Posts](https://zachholman.com/posts/how-github-writes-blog-posts/) by Zach Holman.
+
 Ruby:
 
 1. [Ruby Koans](http://rubykoans.com/) – Learn Ruby with the Neo Ruby Koans.
 2. Jay Fields, Shane Harvie, Martin Fowler with Kent Beck.
   [Refactoring](http://books.google.pl/books/about/Refactoring.html?id=6jyOUrJBJHAC) – Ruby edition.
-3. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide
-4. [Get the Lowdown on Ruby Modules](https://www.sitepoint.com/get-the-low-down-on-ruby-modules/)
+3. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide.
+4. [Get the Lowdown on Ruby Modules](https://www.sitepoint.com/get-the-low-down-on-ruby-modules/).
 
 
 Git:
