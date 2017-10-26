@@ -59,10 +59,8 @@
 
 ### RSpec
 
-1. Myron Marston and Ian Dees.
-  [Effective Testing with RSpec 3][3].
-1. Robert C. Martin.
-  [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
+1. Myron Marston and Ian Dees. [Effective Testing with RSpec 3][3].
+1. Robert C. Martin. [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
 2. Dokumentacja [RSpec](http://rspec.info/):
   - [rspec-core](https://github.com/rspec/rspec-core)
   - [rspec-expectations](https://github.com/rspec/rspec-expectations); zob. też
@@ -74,6 +72,17 @@
   - [Octokit](https://github.com/octokit/octokit.rb) –
   many examples of excellent descriptions
   - [The RSpec Style Guide](https://github.com/reachlocal/rspec-style-guide)
+
+
+
+### RSpec Docs
+
+
+[RSpec](https://relishapp.com/rspec) (on Relish):
+
+* [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
+* [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs)
+* [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
 
 
 ### Więcej o RSpec
