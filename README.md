@@ -57,7 +57,7 @@
 9. Praca z *Legacy Code* (zastanym kodem, kodem niepokrytym testami).
 
 
-### RSpec
+### Testing
 
 1. Myron Marston and Ian Dees. [Effective Testing with RSpec 3][3].
 1. Robert C. Martin. [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
@@ -81,11 +81,13 @@
 [RSpec](https://relishapp.com/rspec) (on Relish):
 
 * [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
-* [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs)
+* [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs);
+  [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers#output-instance_method) –
+  the `#output` matcher captures _stdout_ and _stderr_
 * [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
 
 
-### Więcej o RSpec
+### Testowanie
 
 1. Bill Wake, [3A – Arrange, Act, Assert](http://xp123.com/articles/3a-arrange-act-assert/).
 1. [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/v/3-6/docs/basics/scope).
