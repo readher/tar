@@ -80,7 +80,7 @@
 
 ### Testowanie
 
-1. Bill Wake, [3A – Arrange, Act, Assert](http://xp123.com/articles/3a-arrange-act-assert/) pattern; see also Sandi Metz, [Setup, Do, Verify](https://www.sandimetz.com/99bottles/sample#_writing_the_first_test).
+1. Bill Wake, [3A – Arrange, Act, Assert](http://xp123.com/articles/3a-arrange-act-assert/) pattern; see also Sandi Metz, [Setup, Do, Verify](https://www.sandimetz.com/99bottles/sample#_writing_the_first_test); and Robert C. Martin [Build, Operate, Check](https://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm). 
 1. [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/v/3-6/docs/basics/scope).
 
 Terminologia za Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Addison Wesley (2007).
