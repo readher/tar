@@ -8,8 +8,8 @@ kolejno:
 
 1. Logujemy się na _travis-ci.org_, gdzie należy autoryzujemy konto z _github.com_.
 2. Logujemy się na _github.com_:
-   - wybieramy my-rspec -> hello_rspec_user
-   - w Settings -> Integrations & Services wykonujemy Add service -> Travis CI
+   - wybieramy my-rspec → hello_rspec_user
+   - w Settings → Integrations & Services wykonujemy Add service → Travis CI
    - uzupełniamy dane:
      * User: login na _github.com_
      * Token: _travis-ci.org/profile_, klikamy na „oczko” przy tokenie i wklejamy token
