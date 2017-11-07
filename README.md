@@ -6,21 +6,20 @@ Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinn
 umożliwić podłączenie testów do Travis CI. W tym celu użytkownik wykonujemy
 kolejno:
 
-1. Zalogować się na _travis-ci.org_, gdzie należy autoryzować konto _github.com_.
-2. Zalogować się na _github.com_:
-   - wybrać my-rspec -> hello_rspec_user
-   - w settings -> Integrations & services
-   - wykonać Add service -> Travis CI
-   - uzupełnić dane:
+1. Logoujemy się na _travis-ci.org_, gdzie należy autoryzujemy konto z _github.com_.
+2. Logujemy się na _github.com_:
+   - wybieramy my-rspec -> hello_rspec_user
+   - w Settings -> Integrations & Services wykonujemy Add service -> Travis CI
+   - uzupełniamy dane:
      * User: login na _github.com_
-     * Token: _travis-ci.org/profile_, klikamy na oczko przy tokenie i wklejamy
+     * Token: _travis-ci.org/profile_, klikamy na „oczko” przy tokenie i wklejamy token
      * zostawiamy puste Domain:
-     * klikamy update service
-3. Zalogować się na _travis-ci.org_:
+     * klikamy w Update Service
+3. Logujemy się na _travis-ci.org_:
    - wchodzimy na Profil
    - klikamy Sync Account
    - wybieramy organizację _my-rspec_ i włączamy swoje repozytorium
-   - wykonujemy Sync Account (?)
+   - wykonujemy Sync Account
    - opcjonalnie klikamy w Trigger Build
 
 
