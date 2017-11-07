@@ -1,9 +1,9 @@
 ## Testowanie Aplikacji Ruby, 2017/18
 
-### :new: Travis
+### :new: Travis (wersja beta)
 
-Zmieniłem uprawnienia uprawnienia w repozytoriach na Admin co powinno umożliwić
-podłączenie testów do Travis CI.
+Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin
+co powinno umożliwić podłączenie testów do Travis CI.
 
 W tym celu użytkownik powinien:
 
@@ -14,9 +14,9 @@ W tym celu użytkownik powinien:
    - w settings -> Integrations & services
    - wykonać Add service -> Travis CI
    - uzupełnić dane:
-     * User: login na github.com
-     * Token: travis-ci.org/profile, klikamy na oczko przy tokenie i wklejamy
-     * zostawiamy Domain: puste
+     * User: login na _github.com_
+     * Token: _travis-ci.org/profile_, klikamy na oczko przy tokenie i wklejamy
+     * zostawiamy puste Domain:
      * klikamy update service
 
 3. Zalogować się na _travis-ci.org_:
