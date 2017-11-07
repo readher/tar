@@ -2,13 +2,11 @@
 
 ### :new: Travis (wersja beta)
 
-Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin
-co powinno umożliwić podłączenie testów do Travis CI.
-
-W tym celu użytkownik powinien:
+Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinno
+umożliwić podłączenie testów do Travis CI. W tym celu użytkownik wykonujemy
+kolejno:
 
 1. Zalogować się na _travis-ci.org_, gdzie należy autoryzować konto _github.com_.
-
 2. Zalogować się na _github.com_:
    - wybrać my-rspec -> hello_rspec_user
    - w settings -> Integrations & services
@@ -18,7 +16,6 @@ W tym celu użytkownik powinien:
      * Token: _travis-ci.org/profile_, klikamy na oczko przy tokenie i wklejamy
      * zostawiamy puste Domain:
      * klikamy update service
-
 3. Zalogować się na _travis-ci.org_:
    - wchodzimy na Profil
    - klikamy Sync Account
