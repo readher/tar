@@ -14,7 +14,7 @@ kolejno:
      * User: login na _github.com_
      * Token: _travis-ci.org/profile_, klikamy na „oczko” przy tokenie i wklejamy token
      * zostawiamy puste Domain:
-     * klikamy w Update Service
+     * klikamy Update Service
 3. Logujemy się na _travis-ci.org_:
    - wchodzimy na Profil
    - klikamy Sync Account
