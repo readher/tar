@@ -1,5 +1,32 @@
 ## Testowanie Aplikacji Ruby, 2017/18
 
+### :new: Travis
+
+Zmieniłem uprawnienia uprawnienia w repozytoriach na Admin co powinno umożliwić
+podłączenie testów do Travis CI.
+
+W tym celu użytkownik powinien:
+
+1. Zalogować się na _travis-ci.org_, gdzie należy autoryzować konto _github.com_.
+
+2. Zalogować się na _github.com_:
+   - wybrać my-rspec -> hello_rspec_user
+   - w settings -> Integrations & services
+   - wykonać Add service -> Travis CI
+   - uzupełnić dane:
+     * User: login na github.com
+     * Token: travis-ci.org/profile, klikamy na oczko przy tokenie i wklejamy
+     * zostawiamy Domain: puste
+     * klikamy update service
+
+3. Zalogować się na _travis-ci.org_:
+   - wchodzimy na Profil
+   - klikamy Sync Account
+   - wybieramy organizację _my-rspec_ i włączamy swoje repozytorium
+   - wykonujemy Sync Account (?)
+   - opcjonalnie klikamy w Trigger Build
+
+
 ### Ruby
 
 1. Konfiguracja środowiska do pracy z projektami w Ruby:
