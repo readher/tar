@@ -91,25 +91,18 @@ Dziękuję za pomoc studentom T. Adamczykowi i K. Kulewskiemu.
 9. Praca z *Legacy Code* (zastanym kodem, kodem niepokrytym testami).
 
 
-### Testing
+### RSpec
 
 1. Myron Marston and Ian Dees. [Effective Testing with RSpec 3][3].
 1. Robert C. Martin. [Czysty kod](http://helion.pl/ksiazki/czysty-kod-podrecznik-dobrego-programisty-robert-c-martin,czykov.htm).
 1. [Better Specs](http://betterspecs.org) – how to describe your methods, use context
 1. [Octokit](https://github.com/octokit/octokit.rb) – many examples of excellent descriptions
 1. [The RSpec Style Guide](https://github.com/reachlocal/rspec-style-guide)
-
-
-### RSpec Docs
-
-
-[RSpec](https://relishapp.com/rspec) (on Relish):
-
-* [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
-* [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs);
-  [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers#output-instance_method) –
-  the `#output` matcher captures _stdout_ and _stderr_
-* [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
+1. [RSpec](https://relishapp.com/rspec) (on Relish):
+  * [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
+  * [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs);
+    [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers#output-instance_method) – the `#output` matcher captures _stdout_ and _stderr_
+  * [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
 
 
 ### Testowanie
@@ -128,10 +121,6 @@ Terminologia za Gerard Meszaros, _xUnit Test Patterns Refactoring Test Code_, Ad
   - [Configurable Test Double](http://xunitpatterns.com/Configurable%20Test%20Double.html)
   - [Hard-Coded Test Double](http://xunitpatterns.com/Hard-Coded%20Test%20Double.html)
 
-<!--
-1. Mary-Anne Cosgrove, [Making the Most of BDD, Part 1](https://webuild.envato.com/blog/making-the-most-of-bdd-part-1/).
--->
-
 
 ### Inne użyteczne rzeczy...
 
@@ -147,7 +136,6 @@ Ruby:
 3. [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) – a community-driven Ruby coding style guide.
 4. [Get the Lowdown on Ruby Modules](https://www.sitepoint.com/get-the-low-down-on-ruby-modules/).
 
-
 Git:
 
 * Jeff Geerling.
@@ -157,80 +145,20 @@ Git:
   - [6.2 GitHub - Contributing to a Project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
 * [Git Tips](https://github.com/git-tips/tips) – most commonly used git tips and tricks
 * [github-cheat-sheet](http://git.io/sheet)
-
-
-Atom (command palette -> cmd+shift+p):
-
-Polskie literki (ą, Ś) oraz nowe i nadpisanie _keybinding_ w systemie Darwin.
-Dopisujemy w pliku _~/.atom/keymap.cson_:
-
-```yaml
-'.platform-darwin atom-text-editor':
-  'alt-a': 'native!'
-  'alt-shift-s': 'unset!'
-  'ctrl-shift-i': 'auto-indent:apply'
-  'cmd-shift-m': 'markdown-preview:toggle'
-```
-
-Większe literki w oknie script i linter oraz w UI.
-Dopisujemy w pliku _~/.atom/styles.less_:
-
-```less
-@ui-font-size: 16px;
-
-.script-view {
- .panel-body pre {
-   background: @tool-panel-background-color;
-   color: @text-color;
-   font-size: 1.6rem;
- }
- .output {
-   font-size: 1.6rem;
- }
- .stderr {
-   color: @text-color-error;
-   font-size: 1.6rem;
- }
-}
-
-linter-message {
-  font-size: @ui-font-size;
-}
-
-.rspec-console.rspec {
-   background-color: white;
-   color: black;
-   overflow: scroll;
- }
-.rspec-console.rspec {
-  pre,
-  pre div atom-text-editor,
-  code,
-  tt {
-    font-size: @ui-font-size;
-    font-family: PT Mono, monospace;
-  }
-  .rspec-output {
-    background: #fff;
-    color: #000;
-  }
-}
-```
+* [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) –
+  what to do when things go wrong
 
 Continuous Integration and Deployment:
 
-1. [Codeship](https://www.codeship.io/).
 1. [Travis](https://travis-ci.org/) – niestety usługa płatna dla repozytoriów prywatnych.
 1. [Code Climate](https://codeclimate.com/) – healthy code ships faster.
   - [Deciphering Ruby Code Metrics](http://blog.codeclimate.com/blog/2013/08/07/deciphering-ruby-code-metrics/)
 
-
-Fajne:
+Użyteczne:
 
 1. [Codility](https://codility.com/) – we test coders
 1. [Mega Project List](https://github.com/karan/Projects) –
   a list of practical projects that anyone can solve in any programming language
-
 
 
 [1]: https://github.com/elizabrock/NSS-Syllabus-Spring-2013
