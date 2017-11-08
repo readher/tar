@@ -99,10 +99,10 @@ Dziękuję za pomoc studentom T. Adamczykowi i K. Kulewskiemu.
 1. [Octokit](https://github.com/octokit/octokit.rb) – many examples of excellent descriptions
 1. [The RSpec Style Guide](https://github.com/reachlocal/rspec-style-guide)
 1. [RSpec](https://relishapp.com/rspec) (on Relish):
-  * [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
-  * [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs);
+    - [RSpec Core 3.6](https://relishapp.com/rspec/rspec-core/docs)
+    - [RSpec Expectations 3.6](https://relishapp.com/rspec/rspec-expectations/docs);
     [Matchers](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers#output-instance_method) – the `#output` matcher captures _stdout_ and _stderr_
-  * [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
+    - [RSpec Mocks 3.6](https://relishapp.com/rspec/rspec-mocks/docs)
 
 
 ### Testowanie
