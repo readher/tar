@@ -1,6 +1,6 @@
 ## Testowanie Aplikacji Ruby, 2017/18
 
-### :new: Travis (wersja beta)
+### :new: Konfiguracja usługi Travis CI
 
 Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinno
 umożliwić podłączenie testów do Travis CI. W tym celu użytkownik wykonujemy
