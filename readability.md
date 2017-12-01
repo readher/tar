@@ -46,6 +46,7 @@ Examples:
 1. Behavior Attractors.
 1. Duplication of Knowledge about Topology.
 1. Procedural Polymorphism.
+  - [I like the idea of replacing ifs with Polymorphism, but I'm not quite comfortable with it yet](https://gist.github.com/jamesarosen/5881146).
 1. Testing State vs Testing Behavior.
 1. Making Assumptions About Usage.
 1. Unwrapping an Object.
