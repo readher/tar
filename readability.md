@@ -6,7 +6,6 @@
 >
 > J. Geerling, [Why I close PRs (project maintainer notes)](http://www.jeffgeerling.com/blog/2016/why-i-close-prs-oss-project-maintainer-notes)
 
-{nbsp}
 
 * If a language has too many features, you waste time choosing which ones to use.
 * Then implement, refine, possibly rethink and redo.
