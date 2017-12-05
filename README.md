@@ -70,7 +70,7 @@ kolejno:
    - wykonujemy Sync Account
    - opcjonalnie klikamy w Trigger Build
 
-Przykładowy plik konfiguracyjny dla usługi Travis CI.
+Przykładowy plik konfiguracyjny _.travis.yml_.
 ```yml
 language: ruby
 rvm:
@@ -79,7 +79,7 @@ script:
   - bundle exec rspec .
 ```
 
-Dziękuję za pomoc studentom T. Adamczykowi i K. Kulewskiemu.
+Dziękuję za przygotowanie instrukcji T. Adamczykowi i K. Kulewskiemu.
 
 
 ### Ruby
