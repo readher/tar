@@ -3,8 +3,8 @@
 ## :new: Egzamin – projekt „Mocking Hell”
 
 Repozytorium z projektem należy podłączyć do GitHub Classroom.
-Projekty należy zintegrować z serwisem [Travis CI](https://docs.travis-ci.com)
-i [Code Climate](https://codeclimate.com).
+Projekty należy zintegrować darmowymi wersjami serwisów
+[Travis CI](https://docs.travis-ci.com) i [Code Climate](https://codeclimate.com).
 
 Terminarz:
 
