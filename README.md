@@ -1,6 +1,18 @@
 ## Testowanie Aplikacji Ruby, 2017/18
 
-### :new: Konfiguracja usługi Travis CI
+## :new: Egzamin – projekt „Mocking Hell”
+
+Repozytorium z projektem należy podłączyć do GitHub Classroom.
+Projekty należy zintegrować z serwisem [Travis CI](https://docs.travis-ci.com)
+i [Code Climate](https://codeclimate.com).
+
+Terminarz:
+
+* Prace oddane po 09.01.2018 – ocena obniżona.
+* Prace oddane po 16.01.2018 – ocena ndst z egzaminu w pierwszym terminie.
+
+
+### Konfiguracja usługi Travis CI
 
 Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinno
 umożliwić podłączenie testów do Travis CI. W tym celu użytkownik wykonujemy
