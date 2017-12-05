@@ -12,6 +12,42 @@ Terminarz:
 * Prace oddane po 16.01.2018 – ocena ndst z egzaminu w pierwszym terminie.
 
 
+### :new: Konfiguracja usługi Code Climate
+
+1. Logujemy się na _codeclimate.com_, gdzie autoryzujemy konto z _github.com_;
+2. Logujemy się na _github.com_:
+   - wybieramy _my-rspec_ → _hello_rspec_user_ lub _mocking-hell-teamname_;
+   - wybieramy _Settings_ → _Integrations & Services_ i wykonujemy _Add service_ → _CodeClimate_;
+   - uzupełniamy Token: _codeclimate.com/profile/tokens_ → dodajemy nazwę np. _GitHub_ → kopiujemy token z _CodeClimate_ do _GitHub_ i klikamy _Update Service_;
+3. Logujemy się na _codeclimate.org/dashboard_:
+   - klikamy _Sync now_;
+   - wybieramy odpowiednie repozytorium i klikamy przy nim _Add Repo_;
+4. Logujemy się na _github.com_, gdzie wybieramy dodane repozytorium i dodajemy plik plik _.codeclimate.yml_.
+
+Przykładowy plik konfiguracyjny _.codeclimate.yml_.
+```yml
+version: "2"
+
+plugins:
+  rubocop:
+    enabled: true
+  eslint:
+    enabled: false
+  csslint:
+    enabled: true
+  duplication:
+    enabled: false
+    config:
+      languages:
+      - ruby
+
+exclude_patterns:
+- spec/**/*
+```
+
+Dziękuję za przygotowanie instrukcji T. Adamczykowi.
+
+
 ### Konfiguracja usługi Travis CI
 
 Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinno
