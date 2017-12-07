@@ -5,6 +5,9 @@
 Repozytorium z projektem należy podłączyć do GitHub Classroom.
 Projekty należy zintegrować darmowymi wersjami serwisów
 [Travis CI](https://docs.travis-ci.com) i [Code Climate](https://codeclimate.com).
+Przykładowe repozytorium w którym to zrobiono umieściłem na serwerze GitHub:
+
+* [my-rspec/hello-rspec-wbzyl](https://github.com/my-rspec/hello-rspec-wbzyl)
 
 Terminarz:
 
