@@ -20,41 +20,14 @@ Terminarz:
 1. Logujemy się na _codeclimate.com_, gdzie autoryzujemy konto z _github.com_;
 2. Logujemy się na _github.com_:
    - wybieramy _my-rspec_ → _hello_rspec_user_ lub _mocking-hell-teamname_;
-   - wybieramy _Settings_ → _Integrations & Services_ i wykonujemy _Add service_ → _CodeClimate_;
+   - wybieramy _Settings_ → _Integrations & services_ i wykonujemy _Add service_ → _CodeClimate_;
    - uzupełniamy Token: _codeclimate.com/profile/tokens_ → dodajemy nazwę np. _GitHub_ →
-     kopiujemy token z _CodeClimate_ do _GitHub_ i klikamy _Update Service_;
-     (Sprawdzić: W przypadku repozytoriów publicznych, Code Climate jest już zintegrowany i nie musimy łączyć żadnych tokenów.)
+     kopiujemy token z _CodeClimate_ do _GitHub_ i klikamy _Update Service_
 3. Logujemy się na _codeclimate.org/dashboard_:
    - klikamy _Sync now_;
    - wybieramy odpowiednie repozytorium i klikamy przy nim _Add Repo_;
-4. Logujemy się na _github.com_, gdzie wybieramy dodane repozytorium
-  i dodajemy plik plik _.codeclimate.yml_.
-
-Przykładowy plik konfiguracyjny _.codeclimate.yml_.
-```yml
-version: "2"
-
-plugins:
-  rubocop:
-    enabled: true
-  eslint:
-    enabled: false
-  csslint:
-    enabled: true
-  duplication:
-    enabled: false
-    config:
-      languages:
-      - ruby
-
-exclude_patterns:
-- spec/**/*
-```
 
 <!--
-Logujemy się na _codeclimate.com_, gdzie autoryzujemy konto z GitHub.
-  - Wybieramy kategorię _Open Source_.
-  - Klikamy dwa razy na opcję _Add Repo_ obok naszego repozytorium _mocking-hell_.
 
 ### TODO
 
@@ -67,7 +40,7 @@ Sugeruję skopiować jeden z CodeQuizzes.
   ```ruby
     source 'https://rubygems.org'
 
-    gem 'rspec', :require => false, :group => :test
+    gem 'rspec', :group => :test
     gem 'simplecov', :require => false, :group => :test
    ```
 - Tworzymy plik _.travis.yml_ o treści:
