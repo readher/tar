@@ -96,8 +96,6 @@ SimpleCov.start
 W przeciwnym wypadku funkcja badająca kod nie prześledzi testów i raport się nie wygeneruje lub będzie błędny.
 -->
 
-Dziękuję za przygotowanie instrukcji T. Adamczykowi i P. Aszkielańcowi.
-
 
 ### Konfiguracja usługi Travis CI
 
@@ -127,10 +125,10 @@ language: ruby
 rvm:
   - 2.4
 script:
-  - bundle exec rspec .
+  - bundle exec rspec
 ```
 
-Dziękuję za przygotowanie instrukcji T. Adamczykowi i K. Kulewskiemu.
+Dziękuję za przygotowanie instrukcji T. Adamczykowi, P. Aszkielańcowi i K. Kulewskiemu.
 
 
 ### Ruby
