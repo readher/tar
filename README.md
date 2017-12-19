@@ -38,6 +38,8 @@ Terminarz:
    - wchodzimy w ustawienia repozytorium na Code Climate i wybieramy zakładkę _Badges_
    - wybieramy _Markdown_ i kopiujemy kod w odpowiednie miejsce naszego _README.md_
 
+Dziękuję za przygotowanie instrukcji T. Adamczykowi oraz P. Aszkielańcowi
+
 ### Konfiguracja usługi Travis CI
 
 Zmieniłem uprawnienia uprawnienia w repozytoriach z Classrom na Admin co powinno
