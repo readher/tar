@@ -18,25 +18,32 @@ Terminarz:
 ### :new: Konfiguracja usługi Code Climate
 
 1. Integrujemy nasze repozytorium z Code Climate:
-   - logujemy się na _codeclimate.org/dashboard_:
-   - wybieramy _Open Source_ i klikamy _Add Repo_ przy naszym repozytorium
-   - klikamy _Sync now_;
+   - Logujemy się na _codeclimate.org/dashboard_:
+   - Wybieramy _Open Source_ i klikamy _Add Repo_ przy naszym repozytorium
+   - Klikamy _Sync now_;
 2. Przygotowujemy nasze repozytorium:
-   - tworzymy plik _Gemfile_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/Gemfile)) w którym wymagamy _simplecov_ oraz _rspec_
-   - tworzymy plik _travis.yml_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/.travis.yml)), gdzie _CC_TEST_REPORTER_ID_ to _TEST REPORTER ID_, który znajdujemy w zakładce _Test coverage_ w ustawieniach naszego repozytorium na Code Climate
-   - tworzymy plik _.rspec_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/.rspec))
-   - tworzymy katalogi _lib_ oraz _spec_
-   - w katalogu lib umieszczamy pliki źródłowe naszego programu
-   - do katalogu _spec_ wklejamy pliki z testami
-   - w katalogu _spec_ tworzymy plik _spec_helper.rb_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/spec/spec_helper.rb)), w którym kluczowe jest to aby
+   - Tworzymy plik _Gemfile_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/Gemfile)) w którym wymagamy _simplecov_ oraz _rspec_
+   - Tworzymy plik _travis.yml_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/.travis.yml)), gdzie _CC_TEST_REPORTER_ID_ to _TEST REPORTER ID_, który znajdujemy w zakładce _Test coverage_ w ustawieniach naszego repozytorium na Code Climate
+   UWAGA: Plik
+   ```yml
+   https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+   ```
+   jest odpalany na maszynie Travis CI operującej na systemie linux, więc nie należy zmieniać wersji reportera na używany przez nas system (np. Windows czy Mac OS)
+
+   Może się zdażyć, że zakładka _Settings_ jest niewidoczna. W takim przypadku próbujemy rozwiązań znajdujących się pod [tym linkiem](https://docs.codeclimate.com/v1.0/docs/missing-settings-link).
+   - Tworzymy plik _.rspec_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/.rspec))
+   - Tworzymy katalogi _lib_ oraz _spec_
+   - W katalogu lib umieszczamy pliki źródłowe naszego programu
+   - Do katalogu _spec_ wklejamy pliki z testami
+   - W katalogu _spec_ tworzymy plik _spec_helper.rb_ ([przykład](https://github.com/my-rspec/hello-rspec-wbzyl/blob/master/spec/spec_helper.rb)), w którym kluczowe jest to aby
    ```yml
    require 'simplecov'
    SimpleCov.start
    ```
    było zawsze na początku pliku, gdyż w przeciwnym wypadku analiza pokrycia testami się nie wykona lub będzie błędna
 3. Dodajemy plakietki Code Climate do naszego repozytorium:
-   - wchodzimy w ustawienia repozytorium na Code Climate i wybieramy zakładkę _Badges_
-   - wybieramy _Markdown_ i kopiujemy kod w odpowiednie miejsce naszego _README.md_
+   - Wchodzimy w ustawienia repozytorium na Code Climate i wybieramy zakładkę _Badges_
+   - Wybieramy _Markdown_ i kopiujemy kod w odpowiednie miejsce naszego _README.md_
 
 Dziękuję za przygotowanie instrukcji T. Adamczykowi oraz P. Aszkielańcowi
 
